@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="F-Data Soluciones – Consultoría en Ciencia de Datos e IA. Transformamos tus datos desestructurados en soluciones inteligentes. Olvi-DATA de los problemas.">
+  <title>F-Data Soluciones – Transformamos datos en decisiones</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">F</div>
+        F-Data
+      </a>
+      <div class="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#caso">Caso de éxito</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto" class="btn btn-primary nav-cta">Hablemos →</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menú">☰</button>
+    </div>
+  </nav>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Consultoría en Ciencia de Datos & IA
+        </div>
+        <h1 class="hero-title">
+          Transformamos<br>
+          tus datos en<br>
+          <em>decisiones.</em>
+        </h1>
+        <p class="hero-desc">
+          ¿Tenés información valiosa atrapada en planillas Excel sin estructura? 
+          <strong style="color:#ccd6f6;">Olvi-DATA de los problemas</strong> — nosotros los solucionamos.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contacto" class="btn btn-primary">Solicitar consultoría →</a>
+          <a href="#caso" class="btn btn-ghost">Ver caso de éxito</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div class="hero-card-icon">📊</div>
+            <div>
+              <div class="hero-card-title">Transformación de datos</div>
+              <div class="hero-card-sub">Excel → Base de datos + App</div>
+            </div>
+          </div>
+          <div class="hero-progress">
+            <div class="hero-progress-fill"></div>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric">
+              <div class="metric-num" data-count="100" data-suffix="%">0%</div>
+              <div class="metric-label">Automatizado</div>
+            </div>
+            <div class="metric">
+              <div class="metric-num" data-count="85" data-suffix="%">0%</div>
+              <div class="metric-label">Menos errores</div>
+            </div>
+            <div class="metric">
+              <div class="metric-num">24/7</div>
+              <div class="metric-label">Accesible</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SERVICIOS ══════════ -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">Servicios</span>
+        <h2 class="section-title">Soluciones que <em>potencian</em> tu organización</h2>
+        <p class="section-desc">Cada dato desordenado es una oportunidad escondida. Estos son los servicios que ofrecemos para desbloquearla.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🔍</div>
+          <h3>Auditoría de Datos</h3>
+          <p>Analizamos tus planillas, archivos y sistemas actuales para detectar inconsistencias, duplicados y oportunidades de mejora.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🗂</div>
+          <h3>Diseño de Base de Datos</h3>
+          <p>Diseñamos el modelo relacional ideal (DER) y migramos tus datos a PostgreSQL o la tecnología que mejor se adapte.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>ETL & Automatización</h3>
+          <p>Construimos pipelines de Extracción, Transformación y Carga que eliminan el trabajo manual repetitivo.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Dashboards & Reportes</h3>
+          <p>Creamos tableros interactivos con visualizaciones dinámicas para que tomes decisiones basadas en datos reales.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🖥</div>
+          <h3>Desarrollo de Aplicaciones</h3>
+          <p>Desarrollamos aplicaciones web a medida con Streamlit o tecnologías modernas para que gestiones tu información sin conocimientos técnicos.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <h3>Inteligencia Artificial</h3>
+          <p>Incorporamos modelos de Machine Learning para predicciones, detección de anomalías y recomendaciones automáticas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PROCESO ══════════ -->
+  <section class="section" id="proceso" style="background: rgba(15,52,96,.06);">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">Cómo trabajamos</span>
+        <h2 class="section-title">Del <em>caos</em> al orden en 4 pasos</h2>
+        <p class="section-desc">Un proceso claro, transparente y sin sorpresas. Vos te despreocupás, nosotros nos encargamos.</p>
+      </div>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Diagnóstico</h3>
+          <p>Revisamos tus datos actuales, entendemos tu negocio y detectamos las oportunidades de mejora.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Diseño</h3>
+          <p>Proponemos la arquitectura ideal: modelo de datos, tecnología y alcance del proyecto.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Desarrollo</h3>
+          <p>Construimos la solución completa: limpieza de datos, base de datos, aplicación y visualizaciones.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>Entrega</h3>
+          <p>Desplegamos en producción, capacitamos al equipo y aseguramos que todo funcione perfecto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CASO DE ÉXITO ══════════ -->
+  <section class="section" id="caso">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">Caso de éxito</span>
+        <h2 class="section-title">Club <em>Victoriano Arenas</em></h2>
+        <p class="section-desc">Nuestro primer proyecto real: de múltiples planillas Excel a un sistema integral de gestión deportiva.</p>
+      </div>
+      <div class="case-wrapper reveal">
+        <div class="case-visual">
+          <div class="case-before-after">
+            <div class="case-box case-box-before">
+              <div class="case-box-label">Antes</div>
+              <div class="case-box-icon">📁</div>
+              <p>Múltiples archivos Excel sin estructura, sin documentar, con datos duplicados.</p>
+            </div>
+            <div class="case-arrow">→</div>
+            <div class="case-box case-box-after">
+              <div class="case-box-label">Después</div>
+              <div class="case-box-icon">🚀</div>
+              <p>Base de datos relacional + App web interactiva con visualizaciones dinámicas.</p>
+            </div>
+          </div>
+          <div class="case-stats">
+            <div class="case-stat">
+              <div class="case-stat-num">100%</div>
+              <div class="case-stat-label">Datos centralizados</div>
+            </div>
+            <div class="case-stat">
+              <div class="case-stat-num">-90%</div>
+              <div class="case-stat-label">Tiempo de carga</div>
+            </div>
+            <div class="case-stat">
+              <div class="case-stat-num">0</div>
+              <div class="case-stat-label">Errores manuales</div>
+            </div>
+            <div class="case-stat">
+              <div class="case-stat-num">24/7</div>
+              <div class="case-stat-label">Acceso web</div>
+            </div>
+          </div>
+        </div>
+        <div class="case-content">
+          <h3>EL DESAFÍO</h3>
+          <p>El encargado de estadísticas del club, Licenciado en Periodismo, gestionaba todos los datos de rendimiento deportivo en archivos Excel dispersos. Sin posibilidad de cruzar información, generar reportes automáticos ni detectar patrones.</p>
+          <h3>LA SOLUCIÓN</h3>
+          <p>Diseñamos un sistema completo: limpieza y transformación de datos (ETL), modelado relacional (DER), migración a PostgreSQL en la nube y desarrollo de una aplicación web interactiva con Streamlit.</p>
+          <h3>TECNOLOGÍAS UTILIZADAS</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">pandas</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Supabase</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">plotly</span>
+            <span class="tech-tag">matplotlib</span>
+            <span class="tech-tag">SQLAlchemy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SOBRE MÍ ══════════ -->
+  <section class="section" id="sobre-mi" style="background: rgba(15,52,96,.06);">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">Sobre mí</span>
+        <h2 class="section-title">Quien está <em>detrás</em> de F-Data</h2>
+        <p class="section-desc">Más de 3 años en el rubro IT, formación en Ciencia de Datos e IA, y una pasión genuina por transformar datos en soluciones.</p>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-avatar-area">
+          <div class="about-avatar">F</div>
+          <div class="about-name">[Tu Nombre]</div>
+          <div class="about-role">Fundador · Data Analyst · Developer</div>
+        </div>
+        <div>
+          <p class="about-bio">
+            Soy estudiante de <strong>2° año de Ciencia de Datos e Inteligencia Artificial</strong>, con un año previo en la carrera de <strong>Desarrollador Frontend</strong>. Tengo <strong>+3 años de experiencia</strong> en el rubro IT, habiendo transitado roles como desarrollador, analista programador, analista de datos y actualmente <strong>Analista Funcional & QA</strong> en relación de dependencia, con experiencia adicional en <strong>gestión de proyectos</strong>.
+          </p>
+          <p class="about-bio">
+            Ese recorrido me permitió conocer el ciclo completo de un proyecto tecnológico: desde el relevamiento de requisitos hasta el testing final, pasando por el desarrollo y el análisis de datos. Me sigo capacitando constantemente, incorporando nuevas herramientas y tecnologías.
+          </p>
+
+          <p class="about-exp-title">📋 Trayectoria profesional</p>
+          <div class="exp-timeline">
+            <div class="exp-item">
+              <div class="exp-dot"></div>
+              <span><strong>Analista Funcional & QA</strong> — Rol actual en relación de dependencia</span>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot" style="background:var(--navy);"></div>
+              <span><strong>Analista de Datos</strong> — Extracción, limpieza y visualización de datos</span>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot" style="background:var(--navy);"></div>
+              <span><strong>Analista Programador</strong> — Desarrollo y análisis de sistemas</span>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot" style="background:var(--navy);"></div>
+              <span><strong>Desarrollador</strong> — Frontend y lógica de aplicaciones</span>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot" style="background:var(--navy);"></div>
+              <span><strong>Gestión de Proyectos</strong> — Coordinación de equipos y seguimiento</span>
+            </div>
+          </div>
+
+          <p class="skills-title">🛠 Herramientas & Tecnologías</p>
+          <div class="skills-grid">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">PL/SQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Excel Avanzado</span>
+            <span class="skill-tag">Streamlit</span>
+            <span class="skill-tag">pandas</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">Power BI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ TESTIMONIAL ══════════ -->
+  <section class="section" id="testimonial">
+    <div class="container" style="text-align:center;">
+      <div class="reveal">
+        <span class="section-tag">Testimonial</span>
+        <h2 class="section-title">Lo que dicen nuestros <em>clientes</em></h2>
+        <p class="section-desc" style="margin:0 auto 40px;">La mejor validación es el impacto real en quien confía en nosotros.</p>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-quote-mark">"</div>
+        <p class="testimonial-text">
+          Yo manejaba toda la data del club en varios Excel y era un caos. No podía cruzar información entre temporadas ni generar reportes rápido. Cuando me propuso armar una app con base de datos, no le tenía mucha fe, pero el resultado fue increíble. Ahora tengo todo centralizado, accesible desde el celular, y con gráficos que antes me hubieran llevado horas hacer.
+        </p>
+        <div class="testimonial-author" style="justify-content:center;">
+          <div class="testimonial-author-avatar">⚽</div>
+          <div style="text-align:left;">
+            <div class="testimonial-author-name">Encargado de Estadísticas</div>
+            <div class="testimonial-author-role">Club Atlético Victoriano Arenas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FAQ ══════════ -->
+  <section class="section" id="faq" style="background: rgba(15,52,96,.06);">
+    <div class="container" style="text-align:center;">
+      <div class="reveal">
+        <span class="section-tag">Preguntas frecuentes</span>
+        <h2 class="section-title">Todo lo que necesitás <em>saber</em></h2>
+        <p class="section-desc" style="margin:0 auto 40px;">Las dudas más comunes de nuestros clientes, resueltas.</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>¿Cuánto cuesta el servicio?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Cada proyecto es único, por eso trabajamos con presupuestos personalizados. La primera consulta de diagnóstico es sin cargo: analizamos tu situación y te presentamos una propuesta con alcance, tiempos y costos claros antes de arrancar.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>¿Cuánto tiempo lleva un proyecto?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Depende de la complejidad. Un proyecto de limpieza y migración de datos simple puede tomar 1-2 semanas. Un sistema completo con aplicación web y dashboards interactivos, entre 3 a 6 semanas. Siempre definimos plazos claros antes de arrancar.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>¿Necesito conocimientos técnicos?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">¡Para nada! Justamente esa es nuestra propuesta de valor. Vos solo necesitás tus datos (aunque estén desordenados) y contarnos qué necesitás. Nosotros nos encargamos de toda la parte técnica y te entregamos una solución que puedas usar sin problemas.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>¿Qué pasa con mis datos? ¿Son seguros?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">La confidencialidad es prioridad. Trabajamos con bases de datos en la nube con encriptación y acceso restringido. Podemos firmar un acuerdo de confidencialidad (NDA) si tu proyecto lo requiere. Tus datos siempre son tuyos.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>¿Solo trabajan con clubes de fútbol?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No. El caso de Victoriano Arenas fue nuestro primer proyecto, pero trabajamos con cualquier organización que tenga datos sin aprovechar: PYMEs, comercios, profesionales independientes, ONGs, instituciones educativas y más.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACTO ══════════ -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title">¿Listo para <em>transformar</em> tus datos?</h2>
+        <p class="section-desc">Contanos tu situación y te respondemos en menos de 24hs. La primera consulta es sin cargo.</p>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <h3>Hablemos</h3>
+          <p>Elegí el canal que te resulte más cómodo. También podés completar el formulario y te contactamos nosotros.</p>
+          <a href="https://wa.me/5491100000000?text=Hola!%20Me%20interesa%20una%20consultoría%20de%20datos" target="_blank" class="contact-method" id="contact-whatsapp">
+            <div class="contact-method-icon">💬</div>
+            <div>
+              <div class="contact-method-label">WhatsApp</div>
+              <div class="contact-method-value">Escribinos por WhatsApp</div>
+            </div>
+          </a>
+          <a href="mailto:contacto@fdata.com.ar" class="contact-method" id="contact-email">
+            <div class="contact-method-icon">📧</div>
+            <div>
+              <div class="contact-method-label">Email</div>
+              <div class="contact-method-value">contacto@fdata.com.ar</div>
+            </div>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="contact-method" id="contact-linkedin">
+            <div class="contact-method-icon">💼</div>
+            <div>
+              <div class="contact-method-label">LinkedIn</div>
+              <div class="contact-method-value">Conectemos en LinkedIn</div>
+            </div>
+          </a>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Contanos tu situación</label>
+            <textarea id="message" name="message" placeholder="¿Qué datos manejás? ¿Qué problema querés resolver? Contanos todo lo que puedas..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">Enviar mensaje →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-copy">
+        © 2026 F-Data Soluciones. Transformamos datos en decisiones.
+      </div>
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#caso">Caso de éxito</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
