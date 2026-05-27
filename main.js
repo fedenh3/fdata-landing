@@ -12,16 +12,37 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // ── Mobile hamburger menu ──
-  const navToggle = document.querySelector('.nav-toggle');
-  const navLinks = document.querySelector('.nav-links');
+  // ── Mobile hamburger menu (standalone overlay) ──
+  const navToggle  = document.getElementById('nav-toggle');
+  const overlay    = document.getElementById('mobile-menu-overlay');
+  const closeBtn   = document.getElementById('mobile-menu-close');
 
-  if (navToggle && navLinks) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navLinks.classList.toggle('open');
-      navToggle.textContent = isOpen ? '✕' : '☰';
-      // Prevent body scroll when menu is open
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+  function openMenu() {
+    overlay.classList.add('open');
+    overlay.setAttribute('aria-hidden', 'false');
+    navToggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden', 'true');
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  if (navToggle && overlay) {
+    navToggle.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+
+    // Close on overlay background click (outside the nav)
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeMenu();
+    });
+
+    // Close with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay.classList.contains('open')) closeMenu();
     });
   }
 
@@ -32,11 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = document.querySelector(link.getAttribute('href'));
       if (target) target.scrollIntoView({ behavior: 'smooth' });
       // Close mobile menu if open
-      if (navLinks && navLinks.classList.contains('open')) {
-        navLinks.classList.remove('open');
-        navToggle.textContent = '☰';
-        document.body.style.overflow = '';
-      }
+      if (overlay && overlay.classList.contains('open')) closeMenu();
     });
   });
 
