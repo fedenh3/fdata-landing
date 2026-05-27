@@ -12,12 +12,31 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  // ── Mobile hamburger menu ──
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.textContent = isOpen ? '✕' : '☰';
+      // Prevent body scroll when menu is open
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+  }
+
   // ── Smooth scroll for anchor links ──
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
       const target = document.querySelector(link.getAttribute('href'));
       if (target) target.scrollIntoView({ behavior: 'smooth' });
+      // Close mobile menu if open
+      if (navLinks && navLinks.classList.contains('open')) {
+        navLinks.classList.remove('open');
+        navToggle.textContent = '☰';
+        document.body.style.overflow = '';
+      }
     });
   });
 
